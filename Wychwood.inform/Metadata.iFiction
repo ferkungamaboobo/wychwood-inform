@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>737E14C7-3C0E-4FA4-9280-A2453694F808</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>Wychwood</title>
+            <author>Geoffrey Hans Larsen</author>
+            <headline>Translated from Version E4 to Inform 7 by ferkung[line break]Originally</headline>
+            <genre>Fiction</genre>
+            <firstpublished>2022</firstpublished>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2022-12-20</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>Inform 10.1.2 (build )</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>Inform 10.1.2 (build )</generatorversion>
+            <originated>2022-12-20</originated>
+        </colophon>
+        <glulx>
+            <serial>221220</serial>
+            <release>1</release>
+            <compiler>Inform Inform 10.1.2 (build )</compiler>
+        </glulx>
+    </story>
+</ifindex>
