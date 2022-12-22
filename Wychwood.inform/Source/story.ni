@@ -1,10 +1,10 @@
 "Wychwood" by Geoffrey Hans Larsen
 
 Include Basic Screen Effects by Emily Short.
-
+Release along with cover art ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
 The story headline is "Translated from Version E4 to Inform 7 by ferkung[line break]Originally".
 
-Figure of Splash Screen is the file "title-splash.jpg".
+Figure of Splash Screen is the file "title-splash.jpg" ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
 
 Volume 1 - Verbs
 
@@ -16,6 +16,7 @@ Understand "lift [something]" as pulling.
 Understand "exam [something]" as examining.
 Understand "kick [something]" as attacking.
 Understand "stand [something]" as entering.
+Understand "load" as restoring the game.
 
 Part 2 - Instead
 
@@ -45,15 +46,35 @@ Instead of burning when the player does not have the lighter:
 
 Book 2 - New Action
 
+To say tab:
+	say "        ".
+
 Part 1 - Applying to Nothing
 
 Jumpdowning is an action applying to nothing. Understand "jump down" as jumpdowning.
+Gethelping is an action applying to nothing. Understand "help" as gethelping.
+
+Instead of gethelping:
+	say "YOU need help?? What about ME??";
+	pause the game;
+	say "To redescribe current location:[line break][tab]type [']L['].
+
+Movement:[line break][tab]Movement through the game is usually effected by [']N['], [']S['], [']E['], [']W['], [']U['], and [']D['].
+
+Inventory:[line break][tab]An inventory of your current possessions can be found by typing [']I['].
+
+Commands:[line break][tab]Commands are entered in the usual verb-noun or verb format.
+
+To save game position:[line break][tab]Type [']SAVE[']. The current state of play can then be resumed by typing [']LOAD['].";
+	pause the game;
+	try looking;
+	
 
 Part 2 - Applying to One Thing
 
 Translating is an action applying to one visible thing. Understand "translate [something]" as translating.
 Bending is an action applying to one visible thing. Understand "bend [something]" as bending.
-Sliding is an action applying to one visible thing. Understand "slide [something]" as sliding. [Understand "put [other things] under [something]" as putting it on.]
+Sliding is an action applying to one visible thing. Understand "slide [something]" as sliding.
 Using is an action applying to one visible thing. Understand "use [something]" as using.
 Facing is an action applying to one visible thing. Understand "look [direction]" as facing. 
 
@@ -68,10 +89,6 @@ Instead of emptying something:
 		say "Sploosh! Nothing happens.";
 	otherwise:
 		say "I can't do that.";
-
-Part 3 - Mistakes
-
-
 
 Volume 2 - When Game Starts
 
@@ -378,13 +395,15 @@ A paper-clip
 
 Book 4 - The Front Lawn
 
+The Outside the Mansion is a region.
+
 Part 1 -  Front Lawn
 		
-The Front Lawn is north of the Narrow Dirt Roads. "I am inside the gateway of the mansion. The path leads North and a side path curves west."
+The Front Lawn is north of the Narrow Dirt Roads. The Front Lawn is in the Outside the Mansion. "I am inside the gateway of the mansion. The path leads North and a side path curves west."
 
 Part 2 - Garden Pathway
 
-The garden-pathway is north of the Front Lawn and south of the outside-the-front-door.  "The ornate garden pathway neatly divides the front lawn. Paw prints cross the path from one side to the other. A garden swing creaks in the morning breeze[note-disappear details]." The printed name is "Garden Pathway."
+The garden-pathway is north of the Front Lawn and south of the outside-the-front-door. The garden-pathway is in the Outside the Mansion. "The ornate garden pathway neatly divides the front lawn. Paw prints cross the path from one side to the other. A garden swing creaks in the morning breeze[note-disappear details]." The printed name is "Garden Pathway."
 
 To say note-disappear details:
 	if the player carries the note:
@@ -395,7 +414,7 @@ To say note-disappear details:
 		
 Part 3 - Outside the Front Door
 
-The outside-the-front-door is a room north of the garden-pathway. "I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.[if the front door is unlocked][paragraph break]I can also see:
+The outside-the-front-door is a room north of the garden-pathway. The outside-the-front-door is in the Outside the Mansion. "I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.[if the front door is unlocked][paragraph break]I can also see:
 [line break]An open door". The printed name is "Outside the Front Door"
 
 The front door is a door. The front door is north of outside-the-front-door and south of the Front Hallway. The front door is scenery. The front door is locked. The brass key unlocks the front door.
@@ -627,9 +646,11 @@ After going up from the Circular Room:
 	
 Book 6 - Wychwood Manor Downstairs
 
+Mansion Downstairs is a region.
+
 Part 1 - Front Hallway
 
-The Front Hallway is a room. The Front Hallway is east of The Lounge and west of The Dining Room. "I am in the front hallway at the bottom of a staircase. The dining room is East and the lounge is West. A painting of Stonehenge hangs on the wall and the front door is South."
+The Front Hallway is a room. The Front Hallway is east of The Lounge and west of The Dining Room. The Front Hallway is in the Mansion Downstairs. "I am in the front hallway at the bottom of a staircase. The dining room is East and the lounge is West. A painting of Stonehenge hangs on the wall and the front door is South."
 
 The stairs are scenery in the Front Hallway.
 
@@ -644,7 +665,7 @@ Instead of climbing the stairs in the Front Hallway:
 
 Part 2 - Dining Room
 
-The Dining Room is a room. "I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.[if the opening is unlocked][paragraph break]I can also see:[line break]An opening[line break][end if]"
+The Dining Room is a room. The Dining Room is in the Mansion Downstairs. "I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.[if the opening is unlocked][paragraph break]I can also see:[line break]An opening[line break][end if]"
 
 The candelabrum is scenery in The Dining Room. "The candelabrum feels loose." Understand "candle" as candelabrum. Understand "cand" as candelabrum.
 
@@ -666,7 +687,7 @@ Instead of entering the opening:
 	
 Part 3 - The Secret Room
 
-The Secret Room is a room. "I am within a small scret room. Several photographs of leading Communists hang on the wall."
+The Secret Room is a room. The Secret Room is in the Mansion Downstairs. "I am within a small scret room. Several photographs of leading Communists hang on the wall."
 
 A Russian flag is a thing in the Secret Room. The description is "It shows a hammer and sickle."
 
@@ -686,7 +707,7 @@ Carry out going south in the Secret Room:
 	
 Part 4 - The Lounge
 
-The Lounge is a room. "The lounge contains several glass cases displaying mounted fish. Amonst many photgraphs of game fish is a portrait of a man, woman, and child. The smell of fresh paint comes from the North."
+The Lounge is a room. The Lounge is in the Mansion Downstairs. "The lounge contains several glass cases displaying mounted fish. Amonst many photgraphs of game fish is a portrait of a man, woman, and child. The smell of fresh paint comes from the North."
 
 The rod-and-line is a thing in the Lounge. The rod-and-line can be hooked or unhooked. The rod-and-line is unhooked. Understand "rod" as the rod-and-line. The printed name is "rod and line". 
 
@@ -694,15 +715,15 @@ The fish is scenery in the Lounge. The description is "Very large fish."
 
 Part 5 - The Back Room
 
-The Back Room is a room. The Back Room is north of the lounge. The Back Room is west of the Back Hallway. "The recently-decorated back room overlooks an immaculate lawn. Exits are East and South."
+The Back Room is a room. The Back Room is north of the lounge. The Back Room is in the Mansion Downstairs.  The Back Room is west of the Back Hallway. "The recently-decorated back room overlooks an immaculate lawn. Exits are East and South."
 
 Part 6 - The Back Hallway
 
-The Back Hallway is a room. The Back Hallway is north of the Front Hallway. The Back Hallway is west of the Kitchen. "At the back of the hallway, a door leads into the garden. The kitchen is East and the front door is south."
+The Back Hallway is a room. The Back Hallway is north of the Front Hallway. The Back Hallway is west of the Kitchen. The Back Hallway is in the Mansion Downstairs.  "At the back of the hallway, a door leads into the garden. The kitchen is East and the front door is south."
 
 Part 7 - The Kitchen
 
-The Kitchen is a room. "I am in a modern-styled kitchen. The door is West."
+The Kitchen is a room. The Kitchen is in the Mansion Downstairs. "I am in a modern-styled kitchen. The door is West."
 
 Part 8 - The Garden Door
 
@@ -715,7 +736,7 @@ AFter opening the garden-door:
 	
 Part 9 - The Garden
 
-The Garden is a room. "The superb back garden is surrounded by a ten feet high wall."
+The Garden is a room. The Garden is in the Mansion Downstairs. "The superb back garden is surrounded by a ten feet high wall."
 
 Section 1 - The Dog
 
@@ -794,7 +815,7 @@ Instead of climbing the step-ladder in the Garden:
 		
 Part 10 - Inside the Shed
 
-Inside-the-Shed is a room. The printed name is "Inside the Shed". "Neatly stacked inside the shed are several garden utilities."
+The Inside-the-Shed is a room. The Inside-the-Shed is in the Mansion Downstairs. The printed name is "Inside the Shed". "Neatly stacked inside the shed are several garden utilities."
 
 The step-ladder is a thing in the inside-the-shed. Understand "step" as the step-ladder. Understand "ladder" as the step-ladder.
 
@@ -803,7 +824,7 @@ Instead of exiting in the Inside-the-Shed:
 	
 Part 11 - Top of Garden Wall
 
-Top-of-garden-wall is a room. The printed name is "Top of Garden Wall". "I am standing on the top of the garden wall overlooking a field. The garden is Down below me." 
+Top-of-garden-wall is a room. The Top-of-garden-wall is in the Mansion Downstairs. The printed name is "Top of Garden Wall". "I am standing on the top of the garden wall overlooking a field. The garden is Down below me." 
 
 Instead of going down in the top-of-garden-wall:
 	now the player is in the Garden;
@@ -816,9 +837,11 @@ Instead of jumping in the top-of-garden-wall:
 	
 Book 7 - Wychwood Manor Upstairs
 
+The Mansion Upstairs is a region.
+
 Part 1 - Top of the Stairs
 
-The Top of the Stairs is a room. The Top of the Stairs is above the Front Hallway. "I am at the top of the stairs with exits North, East, West, and Down.[top-of-stairs-desc details]"
+The Top of the Stairs is a room. The Top of the Stairs is above the Front Hallway. The Top of the Stairs is in the Mansion Upstairs. "I am at the top of the stairs with exits North, East, West, and Down.[top-of-stairs-desc details]"
 
 to say top-of-stairs-desc details:
 	if the player is up-the-chair or the ceiling panel is found:
@@ -865,7 +888,7 @@ Instead of entering the ceiling panel:
 
 Part 2 - East Bedroom
 
-The east-bedroom is east of the Top of the Stairs. "I am in the East bedroom. Beneath the window is a large bed and a cabinet stands against one wall." The printed name is "East Bedroom."
+The east-bedroom is east of the Top of the Stairs. The east-bedroom is in the Mansion Upstairs. "I am in the East bedroom. Beneath the window is a large bed and a cabinet stands against one wall." The printed name is "East Bedroom."
 
 The east-cabinet is scenery in the east-bedroom. Understand "cabinet" as the east-cabinet. The printed name is "cabinet".
 
@@ -873,7 +896,7 @@ The east-bed is scenery in the east-bedroom. Understand "bed" as the east-bed. T
 
 Part 3 - West Bedroom
 
-The west-bedroom is west of the Top of the Stairs. "I am in the West bedroom. The floor is covered by a thick-pile carpet and a chest of drawers and double bed make up the main items of furniture." The printed name is "West Bedroom."
+The west-bedroom is west of the Top of the Stairs. The west-bedroom is in the Mansion Upstairs. "I am in the West bedroom. The floor is covered by a thick-pile carpet and a chest of drawers and double bed make up the main items of furniture." The printed name is "West Bedroom."
 
 The credit card is a thing. The credit card is nowhere. The description is "It expires soon."
 
@@ -895,7 +918,7 @@ Instead of searching the west-bed:
 		
 Part 4 - Bathroom
 
-The Bathroom is north of the Top of the Stairs. "The bathroom window overlooks a village to the North and a full-length mirror hangs on one wall."
+The Bathroom is north of the Top of the Stairs. The Bathroom is in the Mansion Upstairs. "The bathroom window overlooks a village to the North and a full-length mirror hangs on one wall."
 
 The chair is a thing in the bathroom. The chair is a supporter. The chair is portable.
 
@@ -910,15 +933,18 @@ Instead of examining the mirror for the first time:
 
 Part 5 - The Loft
 
-The loft is a room. "I am within the loft. One corner appears dark and foreboding. The stairs are Down below me."
+The loft is a room. The loft is in the Mansion Upstairs. "I am within the loft. One corner appears dark and foreboding. The stairs are Down below me."
 
 The bucket is a thing in the loft. The bucket can be filled or empty. The bucket is empty. Understand "buck" as the bucket.
 
 Book 8 - Away from the Mansion
 
+The South Fields is a region.
+The North Fields is a region.
+
 Part 1 - The Small Field
 
-The Small-Field is a room. "I am in a small field with a gate to the North." The printed name is "Small Field".
+The Small-Field is a room. The Small-Field is in the South Fields. "I am in a small field with a gate to the North." The printed name is "Small Field".
 
 The field gate is a door. The field gate is north of the Small-Field and south of the Wooden Platform. The field gate is closed and locked. The description is "It's locked." Understand "gate" as the field gate. 
 
@@ -927,21 +953,21 @@ Instead of climbing the gate:
 	
 Part 2 - The Wooden Platform
 
-The Wooden Platform is a room. The Wooden Platform is south of the Large-Field. "I am on a wooden platform spanning a ditch between two fields."
+The Wooden Platform is a room. The Wooden Platform is south of the Large-Field. The Wooden Platform is in the South Fields. "I am on a wooden platform spanning a ditch between two fields."
 
 Part 3 - The Large Field
 
-The Large-Field is a room. "In the middle of this field is a tree surrounded by signs of digging. On the tree is a plaque. Exits are East, West, and South." The printed name is "Large Field."
+The Large-Field is a room. The Large-Field is in the South Fields. "In the middle of this field is a tree surrounded by signs of digging. On the tree is a plaque. Exits are East, West, and South." The printed name is "Large Field."
 
 The plaque is a thing in the Large-Field. The description is "To all treasure hunters: Farmer brown as asked me to point out that the bejewelled hare is not buried in this field: Kit Williams."
 
 Part 4 - The East Field
 
-The East-Field is a room. The East-Field is east of the Large-Field and south of the North-East-Field. "This field has exits North and West." The printed name is "East Field".
+The East-Field is a room. The East-Field is east of the Large-Field and south of the North-East-Field. The East-Field is in the South Fields. "This field has exits North and West." The printed name is "East Field".
 
 Part 5 - The North-East Field
 
-The North-East-Field is a room. "A solitary scarecrow hands, with arms outstretched, upon a pole. A tree stands beside a footpath leading north." The printed name is "Northeast Field".
+The North-East-Field is a room. The North-East-Field is in the North Fields. "A solitary scarecrow hands, with arms outstretched, upon a pole. A tree stands beside a footpath leading north." The printed name is "Northeast Field".
 
 The scarecrow is a thing in the North-East-Field. The scarecrow is scenery. Understand "scare" as the scarecrow. Understand "scar" as the scarecrow. The description is "Looks like Jon Pertwee."
 
@@ -949,23 +975,23 @@ The tree is a thing in the North-East-Field. The tree is scenery.
 
 Part 6 - The Bridlepath
 
-The Bridlepath is a room. The Bridlepath is north of the North-East-Field. "I am on an East/West bridlepath between two fields."
+The Bridlepath is a room. The Bridlepath is north of the North-East-Field. The Bridlepath is in the North Fields. "I am on an East/West bridlepath between two fields."
 
 Part 7 - The West Field
 
-The West-Field is a room. The West-Field is west of the Large-Field and north of the Mole-hills. "In the middle of this field is a tree." The printed name is "West Field".
+The West-Field is a room. The West-Field is west of the Large-Field and north of the Mole-hills. The West-Field is in the South Fields. "In the middle of this field is a tree." The printed name is "West Field".
 
 The lonely tree is scenery in the West-Field. The printed name is "tree".
 
 Part 8 - The Mole-hills
 
-The Mole-hills is a room. "Mole-hills abound within this field. Another field is north."
+The Mole-hills is a room. The Mole-hills is in the South Fields. "Mole-hills abound within this field. Another field is north."
 
 The mole is scenery in the Mole-hills. Understand "molehills" as the mole. Understand "mole-hills" as the mole. Understand "molehill" as the mole. Understand "mole-hill" as the mole. The printed name is "mole-hills".
 
 Part 9 - Outside the Church
 
-The Outside-the-Church is a room. The Outside-the-Church is east of the Bridlepath. "I am outside the village church at the end of a road leading North." The printed name is "Outside the Church".
+The Outside-the-Church is a room. The Outside-the-Church is east of the Bridlepath. The Outside-the-Church is in the North Fields. "I am outside the village church at the end of a road leading North." The printed name is "Outside the Church".
 
 A church is a thing in the outside-the-church. The church is scenery.
 
@@ -974,7 +1000,7 @@ Instead of entering the church:
 
 Part 10 - The Church
 
-The Inside-the-Church is a room. "Inside the church, several villagers are attending matins. The vicar is giving the sermon." The printed name is "The Church".
+The Inside-the-Church is a room. The Inside-the-Church is in the North Fields. "Inside the church, several villagers are attending matins. The vicar is giving the sermon." The printed name is "The Church".
 
 The vicar is scenery in Inside-the-Church. The vicar can be listened or unlistened. The vicar is unlistened.
 The villagers are scenery in Inside-the-Church. Understand "villager" as the villagers.
@@ -991,15 +1017,15 @@ Instead of exiting in Inside-the-Church:
 
 Part 11 - North of the Church
 
-The North-of-Church is a room. The North-of-Church is north of the Outside-the-Church. "The North/South road passes a field to the West." The printed name is "North of the Church".
+The North-of-Church is a room. The North-of-Church is north of the Outside-the-Church. The North-of-Church is in the North Fields. "The North/South road passes a field to the West." The printed name is "North of the Church".
 
 Part 12 - End of the Road
 
-The End-of-Road is a room. The End-of-Road is north of the North-of-Church. "The road meanders Northwards towards Lower Ashley. I should return South."
+The End-of-Road is a room. The End-of-Road is north of the North-of-Church. The End-of-Road is in the North Fields. "The road meanders Northwards towards Lower Ashley. I should return South."
 
 Part 13 - Tractor Field
 
-The Tractor-Field is a room. The Tractor-Field is west of the North-of-Church. "A tractor is stationary in a corner of this field." The printed name is "North Field".
+The Tractor-Field is a room. The Tractor-Field is west of the North-of-Church. The Tractor-Field is in the North Fields. "A tractor is stationary in a corner of this field." The printed name is "North Field".
 
 The tractor is a thing in the Tractor-Field. The tractor is scenery. 
 
@@ -1019,7 +1045,7 @@ The flask of tea is a thing. Understand "flas" as the flask of tea. The flask of
 
 Part 14 - North of the Stream
 
-The North-of-Stream is a room. The North-of-Stream is west of the Bridlepath. "To the North is a large field and the sound of running water comes form the south." The printed name is "North of the Stream".
+The North-of-Stream is a room. The North-of-Stream is west of the Bridlepath. The North-of-Stream is in the North Fields. "To the North is a large field and the sound of running water comes form the south." The printed name is "North of the Stream".
 
 Instead of dropping the flag in the North-of-Stream:
 	if the black bull is chasing:
@@ -1033,7 +1059,7 @@ Instead of dropping the flag in the North-of-Stream:
 
 Part 15 - The Stream
 
-The Stream is a room. The Stream is south of the North-of-Stream. "I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket."
+The Stream is a room. The Stream is south of the North-of-Stream. The Stream is in the North Fields.  "I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket."
 
 The fisherman is a male person in the Stream. The description is "He looks cold and miserable." Understand "man" as the fisherman.
 
@@ -1063,7 +1089,7 @@ Instead of tying the hook to the rod-and-line:
 
 Part 16 - Oak Field
 
-The Oakfield is a room. The Oakfield is north of the North-of-Stream. "A tall oak tree stands proudly with its golden-brown leaves rustling softly. Scattered around the base of the tree are fallen leaves, victims of the onslaught of Autumn[if the leaves are cleared].
+The Oakfield is a room. The Oakfield is north of the North-of-Stream. The Oakfield is in the North Fields. "A tall oak tree stands proudly with its golden-brown leaves rustling softly. Scattered around the base of the tree are fallen leaves, victims of the onslaught of Autumn[if the leaves are cleared].
 
 I can also see:[line break]A hollow[line break][end if]". The printed name is "Oak Field".
 
@@ -1114,11 +1140,9 @@ Instead of examining the metal box:
 	otherwise:
 		say "I see nothing special about the box.";
 		
-
-	
 Part 17 - In the Tree
 
-In-the-Tree is a room. The In-the-Tree is up from the Oakfield. "I am within the tree about ten feet above the ground. There is a fairly large hollow here." The printed name is "Up the Tree".
+In-the-Tree is a room. The In-the-Tree is up from the Oakfield. The In-the-Tree is in the North Fields. "I am within the tree about ten feet above the ground. There is a fairly large hollow here." The printed name is "Up the Tree".
 
 The metal box is a thing. A metal box is a container. The metal box is lockable and locked. The metal box can be reachable or unreachable. The metal box is unreachable.
 

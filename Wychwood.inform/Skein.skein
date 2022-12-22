@@ -30,12 +30,13 @@
   </item>
   <item nodeId="node-260">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of the morning.&#x000A;&#x000A;Not even seven yet. Right, here goes...&#x000A;&#x000A;Wychwood&#x000A;Translated from Version E4 to Inform 7 by ferkung&#x000A;Originally by Geoffrey Hans Larsen&#x000A;Release 1 / Serial number 221220 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of the morning.&#x000A;&#x000A;Not even seven yet. Right, here goes...&#x000A;&#x000A;Wychwood&#x000A;Translated from Version E4 to Inform 7 by ferkung&#x000A;Originally by Geoffrey Hans Larsen&#x000A;Release 1 / Serial number 221222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-261"/>
       <child nodeId="node-508"/>
+      <child nodeId="node-1290"/>
     </children>
   </item>
   <item nodeId="node-261">
@@ -500,7 +501,7 @@
   </item>
   <item nodeId="node-868">
     <command xml:space="preserve">climb stairs</command>
-    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;A panel in the ceiling&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -536,7 +537,7 @@
   </item>
   <item nodeId="node-872">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">I walk through the door then hear a scuttling sound above me.&#x000A;&#x000A;Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;A panel in the ceiling&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I walk through the door then hear a scuttling sound above me.&#x000A;&#x000A;Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -633,7 +634,7 @@
   </item>
   <item nodeId="node-874">
     <command xml:space="preserve">stand chair</command>
-    <result xml:space="preserve">I can also see:&#x000A;A panel in the ceiling&#x000A;I'm on a chair&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;I'm on a chair&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -696,7 +697,7 @@
   </item>
   <item nodeId="node-881">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;A panel in the ceiling&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -732,7 +733,7 @@
   </item>
   <item nodeId="node-885">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;A panel in the ceiling&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1975,7 +1976,7 @@
   </item>
   <item nodeId="node-1033">
     <command xml:space="preserve">throw squib</command>
-    <result xml:space="preserve">BOOM!&#x000A;The dog scurries away through a small hole in the wall.&#x000A;A stray spark set the grass alight.&#x000A;&#x000A;I can also see:&#x000A;Burning grass&#x000A;A wooden shed&#x000A;The grass burns fiercely&#x000A;&#x000A;BOOM!&#x000A;&#x000A;&#x000A;&#x000A;    *** END OF GAME. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">BOOM!&#x000A;The dog scurries away through a small hole in the wall.&#x000A;A stray spark set the grass alight.&#x000A;&#x000A;I can also see:&#x000A;Burning grass&#x000A;A wooden shed&#x000A;The grass burns fiercely&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6839,6 +6840,39 @@
   <item nodeId="node-719">
     <command xml:space="preserve">pull news</command>
     <result xml:space="preserve">OK.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1290">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">YOU need help?? What about ME??&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1291"/>
+    </children>
+  </item>
+  <item nodeId="node-1291">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">To redescribe current location:         type 'L'.&#x000A;&#x000A;Movement:&#x000A;        Movement through the game is usually effected by 'N', 'S', 'E', 'W', 'U', and 'D'.&#x000A;&#x000A;Inventory:&#x000A;        An inventory of your current possessions can be found by typing 'I'.&#x000A;&#x000A;Commands:&#x000A;        Commands are entered in the usual verb-noun or verb format.&#x000A;&#x000A;To save game position:&#x000A;        Type 'SAVE'. The current state of play can then be resumed by typing 'LOAD'.&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1292"/>
+    </children>
+  </item>
+  <item nodeId="node-1292">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1293"/>
+    </children>
+  </item>
+  <item nodeId="node-1293">
+    <command xml:space="preserve">load</command>
+    <result xml:space="preserve">Restore failed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

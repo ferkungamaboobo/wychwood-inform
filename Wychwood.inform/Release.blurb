@@ -13,9 +13,9 @@ release to "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Release"
 storyfile leafname "Wychwood.gblorb"
 storyfile "C:\Users\thoma\Documents\Inform\Projects\Wychwood.inform\Build\output.ulx" include
 ifiction "C:\Users\thoma\Documents\Inform\Projects\Wychwood.inform\Metadata.iFiction" include
-cover "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
-picture 1 "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
-picture 3 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Figures\title-splash.jpg"
+cover "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Cover.jpg"
+picture 1 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Cover.jpg"
+picture 3 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Figures\title-splash.jpg" "A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood."
 
 ! Placeholder variables
 
@@ -28,7 +28,7 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line4"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||

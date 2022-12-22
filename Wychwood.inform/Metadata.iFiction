@@ -14,10 +14,16 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <cover>
+            <format>jpg</format>
+            <height>628</height>
+            <width>628</width>
+            <description>A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.</description>
+        </cover>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2022-12-20</releasedate>
+                    <releasedate>2022-12-22</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>Inform 10.1.2 (build )</compilerversion>
@@ -27,12 +33,13 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>Inform 10.1.2 (build )</generatorversion>
-            <originated>2022-12-20</originated>
+            <originated>2022-12-22</originated>
         </colophon>
         <glulx>
-            <serial>221220</serial>
+            <serial>221222</serial>
             <release>1</release>
             <compiler>Inform Inform 10.1.2 (build )</compiler>
+            <coverpicture>1</coverpicture>
         </glulx>
     </story>
 </ifindex>
