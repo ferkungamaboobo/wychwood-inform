@@ -96,11 +96,15 @@ Book 1 - Use
 
 Use American dialect and the serial comma.
 
-[Book 2 - Rule for items list
+Book 2 - Rule for items list
 
 Rule for listing nondescript items:
 	say "I can also see:[line break]";
-	say "[a list of props in the location]"]
+	[say "[the list of objects which are marked for listing]";]
+	list the contents of the location, with newlines, not listing concealed items;
+	[Before listing nondescript items:
+list the list of objects which are marked for listing indented with newlines;]
+
 
 Book 2 - Introduction
 
@@ -259,7 +263,7 @@ The Narrow Dirt Roads is north of the Mansion Lane. The Narrow Dirt Roads is in 
 Part 2 - Outside the East Cabin
 
 The Outside the East Cabin is east of the Narrow Dirt Roads. The Outside the East Cabin is in the Cabins Area. "I am outside a windowless portable cabin. Footprints are visible in the dry, dusty earth.[if cabin-door-east is open][paragraph break]I can also see:
-[line break]An open door[end if]"
+[line break]an open door[end if]"
 
 The footprints are scenery in the Outside the East Cabin. "Unusual!"
 
@@ -290,7 +294,7 @@ The mannequin is scenery in the Inside the East Cabin.
 Instead of examining the mannequin:
 	if the black cloak is nowhere:
 		now the black cloak is in the Inside the East Cabin;
-		say "I can also see:[line break]A black cloak[line break]";
+		say "I can also see:[line break]a black cloak[line break]";
 	otherwise:
 		say "I see nothing special.";
 
@@ -299,14 +303,14 @@ The large crate is scenery in the Inside the East Cabin.
 Instead of examining the large crate:
 	if the squib is nowhere:
 		now the squib is in the Inside the East Cabin;
-		say "I can also see:[line break]A squib[line break]";
+		say "I can also see:[line break]a squib[line break]";
 	otherwise:
 		say "I see nothing special."
 		
 Instead of searching the large crate:
 	if the squib is nowhere:
 		now the squib is in the Inside the East Cabin;
-		say "I can also see:[line break]A squib[line break]";
+		say "I can also see:[line break]a squib[line break]";
 	otherwise:
 		say "I see nothing special.";
 
@@ -322,7 +326,7 @@ Instead of exiting in Inside the East Cabin:
 Part 5 - Outside the West Cabin
 
 The Outside the West Cabin is west of the Narrow Dirt Roads. The Outside the West Cabin is in the Cabins Area. "I am outside a portable cabin. A small window looks East.[if cabin-door-west is open][paragraph break]I can also see:
-[line break]An open door[end if]".
+[line break]an open door[end if]".
 
 The west-cabin is scenery in the Outside the West Cabin. "It's unlocked." The printed name is "west cabin". Understand "cabin" as west-cabin. Understand "west cabin" as west-cabin.
 
@@ -341,9 +345,8 @@ Instead of exiting in Inside the West Cabin:
 	try going east.
 
 The description of Inside the West Cabin is "Inside the cabin is a table and a drawer and a motto hangs on the wall.[if drawer is open][paragraph break]I can also see:
-
-A paper-clip
-[line break]A note[end if]".
+[line break]a paper-clip
+[line break]a note[end if]".
 
 The drawer is a closed, openable container in Inside the West Cabin. The drawer is a scenery.
 
@@ -372,25 +375,22 @@ Instead of examining the drawer:
 		try opening the drawer;
 	otherwise:
 		say "I can also see:
-
-A paper-clip
-[line break]A note[line break]";
+[line break]a paper-clip
+[line break]a note[line break]";
 	
 Instead of searching the drawer:
 	if the drawer is closed:
 		try opening the drawer;
 	otherwise:
 		say "I can also see:
-
-A paper-clip
-[line break]A note[line break]";
+[line break]a paper-clip
+[line break]a note[line break]";
 
 Instead of opening the drawer:
 	if the drawer is closed:
 		say "I can also see:
-
-A paper-clip
-[line break]A note[line break]";
+[line break]A paper-clip
+[line break]a note[line break]";
 		now the drawer is open;
 
 Book 4 - The Front Lawn
@@ -415,7 +415,7 @@ To say note-disappear details:
 Part 3 - Outside the Front Door
 
 The outside-the-front-door is a room north of the garden-pathway. The outside-the-front-door is in the Outside the Mansion. "I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.[if the front door is unlocked][paragraph break]I can also see:
-[line break]An open door". The printed name is "Outside the Front Door"
+[line break]an open door". The printed name is "Outside the Front Door"
 
 The front door is a door. The front door is north of outside-the-front-door and south of the Front Hallway. The front door is scenery. The front door is locked. The brass key unlocks the front door.
 
@@ -448,7 +448,7 @@ Instead of pulling the old newspaper:
 		now the newspaper is unslid;
 	otherwise if the old newspaper is slid and the brass key is fallen:
 		say "I can also see:
-[line break]And old newspaper[line break]A brass key[line break]";
+[line break]an old newspaper[line break]a brass key[line break]";
 		now the printed name is "old newspaper";
 		now the brass key is in outside-the-front-door;
 		now the newspaper is unslid;
@@ -475,7 +475,7 @@ Instead of unlocking the front door with the brass key:
 		now the front door is unlocked;
 		now the front door is open;
 		say "I can also see:
-[line break]An open door[line break]";
+[line break]an open door[line break]";
 	otherwise:
 		say "With what?"
 
@@ -491,7 +491,7 @@ Part 1 - West of the Front Lawn
 The West of the Front Lawn is west of the Front Lawn. The West of the Front Lawn is in the The Tunnels Area. "I am West of the front lawn. A heavy stone slab lies on the ground.[if the slab is revealed]
 
 I can also see:
-[line break]Steps Down[end if]".
+[line break]steps Down[end if]".
 
 The slab is scenery in the West of the Front Lawn. The slab can be revealed or unrevealed. The slab is unrevealed. The slab can be batted or unbatted. The slab is batted.
 
@@ -500,12 +500,12 @@ Instead of pushing the slab:
 		say "A bat swoops out past me.
 
 I can also see:
-[line break]Steps Down[line break]";
+[line break]steps Down[line break]";
 		now the slab is unbatted; 
 		now the slab is revealed;
 	otherwise if the slab is unrevealed and the slab is unbatted:
 		say "I can also see:
-[line break]Steps Down[line break]";
+[line break]steps Down[line break]";
 		now the slab is revealed;
 	otherwise if the slab is revealed:
 		say "I can't do that."
@@ -525,12 +525,12 @@ Instead of going down in the West of the Front Lawn:
 
 Part 2 - Bottom of the Stone Steps
 
-The Bottom of the Stone Steps is down from the West of the Front Lawn. The Bottom of the Stone Steps is in the The Tunnels Area. "I am at the bottom of the stone steps beside a heavy, wooden door[if the wooden door is open][paragraph break]I can also see:[line break]A tunnel[end if]".
+The Bottom of the Stone Steps is down from the West of the Front Lawn. The Bottom of the Stone Steps is in the The Tunnels Area. "I am at the bottom of the stone steps beside a heavy, wooden door[if the wooden door is open][paragraph break]I can also see:[line break]a tunnel[end if]".
 
 The wooden door is a door. The door is scenery. The wooden door is closed and openable. The wooden door is down from The Bottom of the Stone Steps and up from the Tunnel Entrance. Understand "tunnel" as the wooden door. 
 
 Instead of opening the wooden door:
-	say "I can also see:[line break]A tunnel[line break]";
+	say "I can also see:[line break]a tunnel[line break]";
 	now the wooden door is open;
 
 Part 3 - Tunnel Entrance
@@ -546,7 +546,7 @@ Part 5 - Deep Steps
 
 The Deep Steps is down from the Inside the Tunnel. The Deep Steps is in the The Tunnels Area. "I am on stone steps above a trap door. [If the trap door is open]
 
-I can also see:[line break]Steps Down[end if]".
+I can also see:[line break]steps Down[end if]".
 
 Part 6 - Trap Door
 
@@ -557,7 +557,7 @@ Instead of opening the trap door:
 	
 Instead of pulling the trap door:
 	now the trap door is open;
-	say "I can also see:[line break]Steps Down[line break]"
+	say "I can also see:[line break]steps Down[line break]"
 
 Part 7 - Circular Room
 
@@ -600,31 +600,31 @@ An old newspaper is a thing that is nowhere. An old newspaper can be slid or uns
 A book of the occult is a thing that is nowhere. The description is "The book is a treasury of witchcraft and demonology. That's interesting! There is a chapter devoted to the translation of runes and symbols."
 
 Instead of examining the hidden bed:
-	say "I can also see:[line break]A lighter[line break]";
+	say "I can also see:[line break]a lighter[line break]";
 	now the lighter is in the circular room.
 	
 Instead of searching the bed:
-	say "I can also see:[line break]A lighter[line break]";
+	say "I can also see:[line break]a lighter[line break]";
 	now the lighter is in the circular room.
 	
 Instead of examining the table:
-	say "I can also see:[line break]A fat cigar
-[line break]An old newspaper[line break]";
+	say "I can also see:[line break]a fat cigar
+[line break]an old newspaper[line break]";
 	if the fat cigar is nowhere:
 		now the fat cigar is on the spooky table;
 	if the old newspaper is nowhere:	
 		now the old newspaper is on the spooky table.
 	
 Instead of searching the table:
-	say "I can also see:[line break]A fat cigar
-[line break]An old newspaper[line break]";
+	say "I can also see:[line break]a fat cigar
+[line break]an old newspaper[line break]";
 	if the fat cigar is nowhere:
 		now the fat cigar is on the spooky table;
 	if the old newspaper is nowhere:	
 		now the old newspaper is on the spooky table.
 	
 Instead of examining the shelf:
-	say "I can also see:[line break]A book of the occult[line break]";
+	say "I can also see:[line break]a book of the occult[line break]";
 	if the book of the occult is nowhere:	
 		now the book of the occult is on the shelf.
 	
@@ -665,13 +665,13 @@ Instead of climbing the stairs in the Front Hallway:
 
 Part 2 - Dining Room
 
-The Dining Room is a room. The Dining Room is in the Mansion Downstairs. "I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.[if the opening is unlocked][paragraph break]I can also see:[line break]An opening[line break][end if]"
+The Dining Room is a room. The Dining Room is in the Mansion Downstairs. "I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.[if the opening is unlocked][paragraph break]I can also see:[line break]an opening[line break][end if]"
 
 The candelabrum is scenery in The Dining Room. "The candelabrum feels loose." Understand "candle" as candelabrum. Understand "cand" as candelabrum.
 
 Instead of pulling the candelabrum:
 	say "I hear a creaking sound...";
-	say "[line break]I can also see:[line break]An opening[line break]";
+	say "[line break]I can also see:[line break]an opening[line break]";
 	now the opening is unlocked;
 	now the opening is open;
 
@@ -766,9 +766,9 @@ Instead of dropping the squib when the player is in the Garden:
 	if the squib is fireful:
 		now the squib is nowhere;
 		now the fierce dog is nowhere;
-		say "BOOM![line break]The dog scurries away through a small hole in the wall.[line break]A stray spark set the grass alight.";
+		say "BOOM![line break]The dog scurries away through a small hole in the wall.[line break]a stray spark set the grass alight.";
 		now the printed name of the pile of grass is "burning grass";
-		say "[line break]I can also see:[line break]Burning grass[line break]A wooden shed[line break]The grass burns fiercely[line break]";
+		say "[line break]I can also see:[line break]Burning grass[line break]a wooden shed[line break]The grass burns fiercely[line break]";
 		now the pile of grass is fireful;
 	otherwise:
 		say "I can't do that."
@@ -779,7 +779,7 @@ Instead of emptying the bucket when the player is in the Garden:
 		now the pile of grass is wet;
 		now the wooden shed is unfireful;
 		now the pile of grass is nowhere;
-		say "I can also see:[line break]A wooden shed[line break]";
+		say "I can also see:[line break]a wooden shed[line break]";
 		now the bucket is empty;
 	otherwise:
 		say "Sploosh! Nothing happens.";
@@ -847,13 +847,13 @@ to say top-of-stairs-desc details:
 	if the player is up-the-chair or the ceiling panel is found:
 		say "[paragraph break]I can also see:";
 	if the ceiling panel is found:
-		say "[line break]A panel in the ceiling";
+		say "[line break]a panel in the ceiling";
 	if the player is up-the-chair:
 		say "[line break]I'm on a chair";
 
 Instead of entering the chair:
 	if the player is down-the-chair:
-		say "I can also see:[if the ceiling panel is found][line break]A panel in the ceiling[end if][line break]I'm on a chair[line break]";
+		say "I can also see:[if the ceiling panel is found][line break]a panel in the ceiling[end if][line break]I'm on a chair[line break]";
 		now the chair is scenery;
 		now the player is up-the-chair;
 	otherwise:
@@ -867,9 +867,9 @@ Instead of going down when the player is up-the-chair:
 Instead of facing up when the player is in The Top of the Stairs:
 	now the ceiling panel is found;
 	if the player is up-the-chair:
-		say "I can also see:[line break]A panel in the ceiling[line break]I'm on a chair[line break]";
+		say "I can also see:[line break]a panel in the ceiling[line break]I'm on a chair[line break]";
 	otherwise:
-		say "I can also see:[line break]A panel in the ceiling[line break]";
+		say "I can also see:[line break]a panel in the ceiling[line break]";
 		
 The ceiling panel is a door. The ceiling panel is up from The Top of the Stairs and down from The Loft. The ceiling panel is openable. The ceiling panel is closed. The ceiling panel can be found or unfound. The ceiling panel is unfound.
 
@@ -878,7 +878,7 @@ Instead of opening the ceiling panel:
 		say "Can't reach!";
 	otherwise:
 		now the panel is open;
-		say "I can also see:[line break]An open panel[line break]I'm on a chair[line break]";
+		say "I can also see:[line break]an open panel[line break]I'm on a chair[line break]";
 		
 Instead of entering the ceiling panel:
 	if the player is down-the-chair:
@@ -904,14 +904,14 @@ The west-bed is scenery in the west-bedroom. Understand "bed" as the west-bed. T
 
 Instead of examining the west-bed:
 	if the credit card is nowhere:
-		say "I can also see:[line break]A credit card[line break]";
+		say "I can also see:[line break]a credit card[line break]";
 		now the credit card is in the west-bedroom;
 	otherwise:
 		say "I see nothing special."
 	
 Instead of searching the west-bed:
 	if the credit card is nowhere:
-		say "I can also see:[line break]A credit card[line break]";
+		say "I can also see:[line break]a credit card[line break]";
 		now the credit card is in the west-bedroom;
 	otherwise:
 		say "I see nothing special."
@@ -1031,14 +1031,12 @@ The tractor is a thing in the Tractor-Field. The tractor is scenery.
 
 Instead of examining the tractor:
 	say "I can also see:
-
-A flask of tea[line break]";
+[line break]a flask of tea[line break]";
 	now the flask of tea is in the Tractor-Field;
 	
 Instead of searching the tractor:
 	say "I can also see:
-
-A flask of tea[line break]";
+[line break]a flask of tea[line break]";
 	now the flask of tea is in the Tractor-Field;
 
 The flask of tea is a thing. Understand "flas" as the flask of tea. The flask of tea is nowhere.
@@ -1091,7 +1089,7 @@ Part 16 - Oak Field
 
 The Oakfield is a room. The Oakfield is north of the North-of-Stream. The Oakfield is in the North Fields. "A tall oak tree stands proudly with its golden-brown leaves rustling softly. Scattered around the base of the tree are fallen leaves, victims of the onslaught of Autumn[if the leaves are cleared].
 
-I can also see:[line break]A hollow[line break][end if]". The printed name is "Oak Field".
+I can also see:[line break]a hollow[line break][end if]". The printed name is "Oak Field".
 
 The oak tree is scenery in the Oakfield.
 The leaves are scenery in the Oakfield. The leaves can be cleared or dirty. The leaves are dirty.
@@ -1117,11 +1115,11 @@ Instead of climbing the oak tree:
 	try going up.
 	
 Instead of pushing the leaves for the first time:
-	say "[line break]I can also see:[line break]A hollow[line break]";
+	say "[line break]I can also see:[line break]a hollow[line break]";
 	now the leaves are cleared;
 	
 Instead of examining the bottom-hollow for the first time:
-	say "[line break]I can also see:[line break]A small key[line break]A hollow[line break]";
+	say "[line break]I can also see:[line break]a small key[line break]a hollow[line break]";
 	now the small key is in the Oakfield;
 
 Does the player mean unlocking the metal box with the small key: it is very likely.
@@ -1135,7 +1133,7 @@ Instead of unlocking the metal box with the small key:
 		
 Instead of examining the metal box:
 	if the box is unlocked:
-		say "[line break]I can also see:[line break]A hollow[line break]A wad of notes[line break]";
+		say "[line break]I can also see:[line break]a hollow[line break]a wad of notes[line break]";
 		now the wad of notes is in the Oakfield; 
 	otherwise:
 		say "I see nothing special about the box.";

@@ -30,13 +30,17 @@
   </item>
   <item nodeId="node-260">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of the morning.&#x000A;&#x000A;Not even seven yet. Right, here goes...&#x000A;&#x000A;Wychwood&#x000A;Translated from Version E4 to Inform 7 by ferkung&#x000A;Originally by Geoffrey Hans Larsen&#x000A;Release 1 / Serial number 221222 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of the morning.&#x000A;&#x000A;Not even seven yet. Right, here goes...&#x000A;&#x000A;Wychwood&#x000A;Translated from Version E4 to Inform 7 by ferkung&#x000A;Originally by Geoffrey Hans Larsen&#x000A;Release 1 / Serial number 221223 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-261"/>
       <child nodeId="node-508"/>
+      <child nodeId="node-1302"/>
+      <child nodeId="node-1301"/>
       <child nodeId="node-1290"/>
+      <child nodeId="node-1294"/>
+      <child nodeId="node-1312"/>
     </children>
   </item>
   <item nodeId="node-261">
@@ -150,7 +154,7 @@
   </item>
   <item nodeId="node-829">
     <command xml:space="preserve">exam drawer</command>
-    <result xml:space="preserve">I can also see:&#x000A;&#x000A;A paper-clip &#x000A;A note&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;&#x000A;A paper-clip &#x000A;a note&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -168,7 +172,7 @@
   </item>
   <item nodeId="node-831">
     <command xml:space="preserve">leave</command>
-    <result xml:space="preserve">Outside the West Cabin&#x000A;I am outside a portable cabin. A small window looks East.&#x000A;&#x000A;I can also see: &#x000A;An open door&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Outside the West Cabin&#x000A;I am outside a portable cabin. A small window looks East.&#x000A;&#x000A;I can also see: &#x000A;an open door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -222,7 +226,7 @@
   </item>
   <item nodeId="node-837">
     <command xml:space="preserve">open door</command>
-    <result xml:space="preserve">I can also see:&#x000A;A tunnel&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a tunnel&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -294,7 +298,7 @@
   </item>
   <item nodeId="node-845">
     <command xml:space="preserve">exam bed</command>
-    <result xml:space="preserve">I can also see:&#x000A;A lighter&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a lighter&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -312,7 +316,7 @@
   </item>
   <item nodeId="node-847">
     <command xml:space="preserve">exam table</command>
-    <result xml:space="preserve">I can also see:&#x000A;A fat cigar &#x000A;An old newspaper&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a fat cigar &#x000A;an old newspaper&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -366,7 +370,7 @@
   </item>
   <item nodeId="node-853">
     <command xml:space="preserve">go door</command>
-    <result xml:space="preserve">Bottom of the Stone Steps&#x000A;I am at the bottom of the stone steps beside a heavy, wooden door&#x000A;&#x000A;I can also see:&#x000A;A tunnel&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Bottom of the Stone Steps&#x000A;I am at the bottom of the stone steps beside a heavy, wooden door&#x000A;&#x000A;I can also see:&#x000A;a tunnel&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -447,7 +451,7 @@
   </item>
   <item nodeId="node-862">
     <command xml:space="preserve">pull news</command>
-    <result xml:space="preserve">I can also see: &#x000A;And old newspaper&#x000A;A brass key&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see: &#x000A;an old newspaper&#x000A;a brass key&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -483,7 +487,7 @@
   </item>
   <item nodeId="node-866">
     <command xml:space="preserve">unlock door</command>
-    <result xml:space="preserve">(with the brass key)&#x000A;I can also see: &#x000A;An open door&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(with the brass key)&#x000A;I can also see: &#x000A;an open door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -519,7 +523,7 @@
   </item>
   <item nodeId="node-870">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Bathroom&#x000A;The bathroom window overlooks a village to the North and a full-length mirror hangs on one wall.&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Bathroom&#x000A;The bathroom window overlooks a village to the North and a full-length mirror hangs on one wall.&#x000A;&#x000A;I can also see:&#x000A;a chair&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -643,7 +647,7 @@
   </item>
   <item nodeId="node-875">
     <command xml:space="preserve">open panel</command>
-    <result xml:space="preserve">I can also see:&#x000A;An open panel&#x000A;I'm on a chair&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;an open panel&#x000A;I'm on a chair&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -652,7 +656,7 @@
   </item>
   <item nodeId="node-876">
     <command xml:space="preserve">go panel</command>
-    <result xml:space="preserve">The Loft&#x000A;I am within the loft. One corner appears dark and foreboding. The stairs are Down below me.&#x000A;&#x000A;I can see a bucket here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Loft&#x000A;I am within the loft. One corner appears dark and foreboding. The stairs are Down below me.&#x000A;&#x000A;I can also see:&#x000A;a bucket&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -697,7 +701,7 @@
   </item>
   <item nodeId="node-881">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;a chair&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -715,7 +719,7 @@
   </item>
   <item nodeId="node-883">
     <command xml:space="preserve">exam bed</command>
-    <result xml:space="preserve">I can also see:&#x000A;A credit card&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a credit card&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -733,7 +737,7 @@
   </item>
   <item nodeId="node-885">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can see a chair here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Top of the Stairs&#x000A;I am at the top of the stairs with exits North, East, West, and Down.&#x000A;&#x000A;I can also see:&#x000A;a chair&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -751,7 +755,7 @@
   </item>
   <item nodeId="node-887">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">The door slams behind me.&#x000A;&#x000A;Outside the Front Door&#x000A;I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.&#x000A;&#x000A;I can see an old newspaper here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The door slams behind me.&#x000A;&#x000A;Outside the Front Door&#x000A;I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.&#x000A;&#x000A;I can also see:&#x000A;an old newspaper&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -796,7 +800,7 @@
   </item>
   <item nodeId="node-892">
     <command xml:space="preserve">use card</command>
-    <result xml:space="preserve">The card allows access to the cabin.&#x000A;&#x000A;Outside the East Cabin&#x000A;I am outside a windowless portable cabin. Footprints are visible in the dry, dusty earth.&#x000A;&#x000A;I can also see: &#x000A;An open door&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The card allows access to the cabin.&#x000A;&#x000A;Outside the East Cabin&#x000A;I am outside a windowless portable cabin. Footprints are visible in the dry, dusty earth.&#x000A;&#x000A;I can also see: &#x000A;a open door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -805,7 +809,7 @@
   </item>
   <item nodeId="node-893">
     <command xml:space="preserve">enter cabin</command>
-    <result xml:space="preserve">Inside the East Cabin&#x000A;Inside the cabin is a large crate marked "FX" There is a wall mirror beside which stands a mannequin.&#x000A;&#x000A;I can see a clapperboard here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the East Cabin&#x000A;Inside the cabin is a large crate marked "FX" There is a wall mirror beside which stands a mannequin.&#x000A;&#x000A;I can also see:&#x000A;a clapperboard&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -821,7 +825,7 @@
   </item>
   <item nodeId="node-894">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Inside the East Cabin&#x000A;Inside the cabin is a large crate marked "FX" There is a wall mirror beside which stands a mannequin.&#x000A;&#x000A;I can see a clapperboard here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the East Cabin&#x000A;Inside the cabin is a large crate marked "FX" There is a wall mirror beside which stands a mannequin.&#x000A;&#x000A;I can also see:&#x000A;a clapperboard&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -830,7 +834,7 @@
   </item>
   <item nodeId="node-895">
     <command xml:space="preserve">exam crate</command>
-    <result xml:space="preserve">I can also see:&#x000A;A squib&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a squib&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -848,7 +852,7 @@
   </item>
   <item nodeId="node-897">
     <command xml:space="preserve">leave</command>
-    <result xml:space="preserve">Outside the East Cabin&#x000A;I am outside a windowless portable cabin. Footprints are visible in the dry, dusty earth.&#x000A;&#x000A;I can also see: &#x000A;An open door&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Outside the East Cabin&#x000A;I am outside a windowless portable cabin. Footprints are visible in the dry, dusty earth.&#x000A;&#x000A;I can also see: &#x000A;a open door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -965,7 +969,7 @@
   </item>
   <item nodeId="node-910">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Outside the Front Door&#x000A;I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.&#x000A;&#x000A;I can see an old newspaper here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Outside the Front Door&#x000A;I am outside the front door. Above the keyhole is a notice and a carved figure head forms the door-knocker. The base of the door has clawed scratches across it and the morning breeze sighs wistfully as it blows through a small gap below the door.&#x000A;&#x000A;I can also see:&#x000A;an old newspaper&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -992,7 +996,7 @@
   </item>
   <item nodeId="node-913">
     <command xml:space="preserve">unlock door</command>
-    <result xml:space="preserve">(with the brass key)&#x000A;I can also see: &#x000A;An open door&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(with the brass key)&#x000A;I can also see: &#x000A;an open door&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1010,7 +1014,7 @@
   </item>
   <item nodeId="node-915">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">The Dining Room&#x000A;I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.&#x000A;&#x000A;I can see a bowl of fruit here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Dining Room&#x000A;I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.&#x000A;&#x000A;I can also see:&#x000A;a bowl of fruit&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1028,7 +1032,7 @@
   </item>
   <item nodeId="node-917">
     <command xml:space="preserve">pull cand</command>
-    <result xml:space="preserve">I hear a creaking sound...&#x000A;&#x000A;I can also see:&#x000A;An opening&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I hear a creaking sound...&#x000A;&#x000A;I can also see:&#x000A;an opening&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1037,7 +1041,7 @@
   </item>
   <item nodeId="node-918">
     <command xml:space="preserve">go opening</command>
-    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can see a Russian flag, a diary, and a memo pad here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can also see:&#x000A;a Russian flag&#x000A;a diary&#x000A;a memo pad&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1055,7 +1059,7 @@
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">leave</command>
-    <result xml:space="preserve">The panel closes up behind me.&#x000A;&#x000A;The Dining Room&#x000A;I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.&#x000A;&#x000A;I can see a bowl of fruit here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The panel closes up behind me.&#x000A;&#x000A;The Dining Room&#x000A;I am in the dining room. An ornate chandelier hangs from the ceiling and a brass candelabrum sits on a thick, wooden mantelshelf.&#x000A;&#x000A;I can also see:&#x000A;a bowl of fruit&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1073,7 +1077,7 @@
   </item>
   <item nodeId="node-922">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">The Lounge&#x000A;The lounge contains several glass cases displaying mounted fish. Amonst many photgraphs of game fish is a portrait of a man, woman, and child. The smell of fresh paint comes from the North.&#x000A;&#x000A;I can see a rod and line here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Lounge&#x000A;The lounge contains several glass cases displaying mounted fish. Amonst many photgraphs of game fish is a portrait of a man, woman, and child. The smell of fresh paint comes from the North.&#x000A;&#x000A;I can also see:&#x000A;a rod and line&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1109,7 +1113,7 @@
   </item>
   <item nodeId="node-926">
     <command xml:space="preserve">open door</command>
-    <result xml:space="preserve">The door shuts behind me.&#x000A;&#x000A;Garden&#x000A;The superb back garden is surrounded by a ten feet high wall.&#x000A;&#x000A;I can see a fierce dog, a wooden shed, and a pile of grass here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The door shuts behind me.&#x000A;&#x000A;Garden&#x000A;The superb back garden is surrounded by a ten feet high wall.&#x000A;&#x000A;I can also see:&#x000A;a fierce dog&#x000A;a wooden shed&#x000A;a pile of grass&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1128,7 +1132,7 @@
   </item>
   <item nodeId="node-928">
     <command xml:space="preserve">throw squib</command>
-    <result xml:space="preserve">BOOM!&#x000A;The dog scurries away through a small hole in the wall.&#x000A;A stray spark set the grass alight.&#x000A;&#x000A;I can also see:&#x000A;Burning grass&#x000A;A wooden shed&#x000A;The grass burns fiercely&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">BOOM!&#x000A;The dog scurries away through a small hole in the wall.&#x000A;a stray spark set the grass alight.&#x000A;&#x000A;I can also see:&#x000A;Burning grass&#x000A;a wooden shed&#x000A;The grass burns fiercely&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1137,7 +1141,7 @@
   </item>
   <item nodeId="node-929">
     <command xml:space="preserve">empty bucket</command>
-    <result xml:space="preserve">I can also see:&#x000A;A wooden shed&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a wooden shed&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1146,7 +1150,7 @@
   </item>
   <item nodeId="node-930">
     <command xml:space="preserve">go shed</command>
-    <result xml:space="preserve">Inside the Shed&#x000A;Neatly stacked inside the shed are several garden utilities.&#x000A;&#x000A;I can see a step-ladder here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the Shed&#x000A;Neatly stacked inside the shed are several garden utilities.&#x000A;&#x000A;I can also see:&#x000A;a step-ladder&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1164,7 +1168,7 @@
   </item>
   <item nodeId="node-932">
     <command xml:space="preserve">leave</command>
-    <result xml:space="preserve">Garden&#x000A;The superb back garden is surrounded by a ten feet high wall.&#x000A;&#x000A;I can see a wooden shed here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Garden&#x000A;The superb back garden is surrounded by a ten feet high wall.&#x000A;&#x000A;I can also see:&#x000A;a wooden shed&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1218,7 +1222,7 @@
   </item>
   <item nodeId="node-938">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Large Field.&#x000A;In the middle of this field is a tree surrounded by signs of digging. On the tree is a plaque. Exits are East, West, and South.&#x000A;&#x000A;I can see a plaque here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Large Field.&#x000A;In the middle of this field is a tree surrounded by signs of digging. On the tree is a plaque. Exits are East, West, and South.&#x000A;&#x000A;I can also see:&#x000A;a plaque&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1416,7 +1420,7 @@
   </item>
   <item nodeId="node-960">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Stream&#x000A;I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket.&#x000A;&#x000A;I can see a fisherman here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Stream&#x000A;I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket.&#x000A;&#x000A;I can also see:&#x000A;a fisherman&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1425,7 +1429,7 @@
   </item>
   <item nodeId="node-961">
     <command xml:space="preserve">give flask</command>
-    <result xml:space="preserve">(to the fisherman)&#x000A;The man smiles gratefully.&#x000A;Here, try this strong hook if you're after a LARGE fish.&#x000A;&#x000A;Stream&#x000A;I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket.&#x000A;&#x000A;I can see a hook here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(to the fisherman)&#x000A;The man smiles gratefully.&#x000A;Here, try this strong hook if you're after a LARGE fish.&#x000A;&#x000A;Stream&#x000A;I am standing beside a clear stream. A man sits alone fishing. Beside him is an empty basket.&#x000A;&#x000A;I can also see:&#x000A;a hook&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1452,7 +1456,7 @@
   </item>
   <item nodeId="node-964">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Oak Field&#x000A;A tall oak tree stands proudly with its golden-brown leaves rustling softly. Scattered around the base of the tree are fallen leaves, victims of the onslaught of Autumn&#x000A;&#x000A;I can see a black bull here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Oak Field&#x000A;A tall oak tree stands proudly with its golden-brown leaves rustling softly. Scattered around the base of the tree are fallen leaves, victims of the onslaught of Autumn&#x000A;&#x000A;I can also see:&#x000A;a black bull&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1754,7 +1758,7 @@
   </item>
   <item nodeId="node-973">
     <command xml:space="preserve">get box</command>
-    <result xml:space="preserve">I can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Can't reach!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1799,7 +1803,7 @@
   </item>
   <item nodeId="node-978">
     <command xml:space="preserve">get box</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the metal box)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1817,7 +1821,7 @@
   </item>
   <item nodeId="node-980">
     <command xml:space="preserve">clear leaves</command>
-    <result xml:space="preserve">I can also see:&#x000A;A hollow&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a hollow&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1826,7 +1830,7 @@
   </item>
   <item nodeId="node-981">
     <command xml:space="preserve">exam hollow</command>
-    <result xml:space="preserve">I can also see:&#x000A;A small key&#x000A;A hollow&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a small key&#x000A;a hollow&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1835,7 +1839,7 @@
   </item>
   <item nodeId="node-982">
     <command xml:space="preserve">get smal</command>
-    <result xml:space="preserve">I can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1844,7 +1848,7 @@
   </item>
   <item nodeId="node-983">
     <command xml:space="preserve">get small</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I already have that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1871,7 +1875,7 @@
   </item>
   <item nodeId="node-986">
     <command xml:space="preserve">exam box</command>
-    <result xml:space="preserve">I can also see:&#x000A;A hollow&#x000A;A wad of notes&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I can also see:&#x000A;a hollow&#x000A;a wad of notes&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1987,6 +1991,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-263"/>
+      <child nodeId="node-1303"/>
     </children>
   </item>
   <item nodeId="node-263">
@@ -4933,6 +4938,84 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1303">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1304"/>
+    </children>
+  </item>
+  <item nodeId="node-1304">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Narrow Dirt Roads&#x000A;I am South of the mansion with narrow dirt roads to either side of me.&#x000A;&#x000A;A distant church clock strikes 7.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1305"/>
+    </children>
+  </item>
+  <item nodeId="node-1305">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Outside the West Cabin&#x000A;I am outside a portable cabin. A small window looks East.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1306"/>
+    </children>
+  </item>
+  <item nodeId="node-1306">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">I open the cabin door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1307"/>
+    </children>
+  </item>
+  <item nodeId="node-1307">
+    <command xml:space="preserve">go cabin</command>
+    <result xml:space="preserve">Inside the West Cabin&#x000A;Inside the cabin is a table and a drawer and a motto hangs on the wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1308"/>
+    </children>
+  </item>
+  <item nodeId="node-1308">
+    <command xml:space="preserve">x drawer</command>
+    <result xml:space="preserve">I can also see:&#x000A;&#x000A;A paper-clip &#x000A;a note&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1309"/>
+    </children>
+  </item>
+  <item nodeId="node-1309">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Inside the West Cabin&#x000A;Inside the cabin is a table and a drawer and a motto hangs on the wall.&#x000A;&#x000A;I can also see: &#x000A;a paper-clip &#x000A;a note&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1310"/>
+    </children>
+  </item>
+  <item nodeId="node-1310">
+    <command xml:space="preserve">gonear the flag</command>
+    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can also see:&#x000A;a Russian flag&#x000A;a diary&#x000A;a memo pad&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1311"/>
+    </children>
+  </item>
+  <item nodeId="node-1311">
+    <command xml:space="preserve">get flag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-508">
     <command xml:space="preserve">exam car</command>
     <result xml:space="preserve">I've already searched the car. There's nothing inside of any use.&#x000A;&#x000A;&gt;</result>
@@ -6843,6 +6926,18 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1302">
+    <command xml:space="preserve">gonear flag</command>
+    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can also see:&#x000A;  an opening&#x000A;  myself&#x000A;  a Russian flag&#x000A;  a diary&#x000A;  a memo pad&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1301">
+    <command xml:space="preserve">gonear the flag</command>
+    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can also see:&#x000A;the Russian flag, the diary, and the memo pad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1290">
     <command xml:space="preserve">help</command>
     <result xml:space="preserve">YOU need help?? What about ME??&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
@@ -6854,7 +6949,7 @@
   </item>
   <item nodeId="node-1291">
     <command xml:space="preserve"> </command>
-    <result xml:space="preserve">To redescribe current location:         type 'L'.&#x000A;&#x000A;Movement:&#x000A;        Movement through the game is usually effected by 'N', 'S', 'E', 'W', 'U', and 'D'.&#x000A;&#x000A;Inventory:&#x000A;        An inventory of your current possessions can be found by typing 'I'.&#x000A;&#x000A;Commands:&#x000A;        Commands are entered in the usual verb-noun or verb format.&#x000A;&#x000A;To save game position:&#x000A;        Type 'SAVE'. The current state of play can then be resumed by typing 'LOAD'.&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
+    <result xml:space="preserve">To redescribe current location:&#x000A;        type 'L'.&#x000A;&#x000A;Movement:&#x000A;        Movement through the game is usually effected by 'N', 'S', 'E', 'W', 'U', and 'D'.&#x000A;&#x000A;Inventory:&#x000A;        An inventory of your current possessions can be found by typing 'I'.&#x000A;&#x000A;Commands:&#x000A;        Commands are entered in the usual verb-noun or verb format.&#x000A;&#x000A;To save game position:&#x000A;        Type 'SAVE'. The current state of play can then be resumed by typing 'LOAD'.&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6873,6 +6968,144 @@
   <item nodeId="node-1293">
     <command xml:space="preserve">load</command>
     <result xml:space="preserve">Restore failed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1294">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1295"/>
+    </children>
+  </item>
+  <item nodeId="node-1295">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">T-Junction&#x000A;A splashing sound comes from the East. The T-Junction leads North, East &amp; West.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1296"/>
+    </children>
+  </item>
+  <item nodeId="node-1296">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Outside the House&#x000A;A lovely house overlooks a small pond of lilies. The lane turns away to the North and East. The junction is West.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1297"/>
+    </children>
+  </item>
+  <item nodeId="node-1297">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Northern Pond&#x000A;Here a notice stands beside the pond. The lane bends East/West around the water.&#x000A;&#x000A;A distant church clock strikes 7.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1298"/>
+    </children>
+  </item>
+  <item nodeId="node-1298">
+    <command xml:space="preserve">exam pond</command>
+    <result xml:space="preserve">I can see a steel piping here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1299"/>
+    </children>
+  </item>
+  <item nodeId="node-1299">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Northern Pond&#x000A;Here a notice stands beside the pond. The lane bends East/West around the water.&#x000A;&#x000A;I can also see:&#x000A;the steel piping.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1300"/>
+    </children>
+  </item>
+  <item nodeId="node-1300">
+    <command xml:space="preserve">gonear the flag</command>
+    <result xml:space="preserve">Secret Room&#x000A;I am within a small scret room. Several photographs of leading Communists hang on the wall.&#x000A;&#x000A;I can also see:&#x000A;the Russian flag, the diary, and the memo pad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1312">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1313"/>
+    </children>
+  </item>
+  <item nodeId="node-1313">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">T-Junction&#x000A;A splashing sound comes from the East. The T-Junction leads North, East &amp; West.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1314"/>
+    </children>
+  </item>
+  <item nodeId="node-1314">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1315"/>
+    </children>
+  </item>
+  <item nodeId="node-1315">
+    <command xml:space="preserve">search car</command>
+    <result xml:space="preserve">I've already searched the car. There's nothing inside of any use.&#x000A;&#x000A;A distant church clock strikes 7.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1316"/>
+    </children>
+  </item>
+  <item nodeId="node-1316">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Parked&#x000A;The car is parked in a country lane which leads East. The sound of singing birds fills the crisp fresh air of an early Autumn morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1317"/>
+    </children>
+  </item>
+  <item nodeId="node-1317">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">T-Junction&#x000A;A splashing sound comes from the East. The T-Junction leads North, East &amp; West.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1318"/>
+    </children>
+  </item>
+  <item nodeId="node-1318">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Mansion Lane&#x000A;The lane leads North towards a large rambling mansion in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1319"/>
+    </children>
+  </item>
+  <item nodeId="node-1319">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Narrow Dirt Roads&#x000A;I am South of the mansion with narrow dirt roads to either side of me.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1320"/>
+    </children>
+  </item>
+  <item nodeId="node-1320">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Outside the West Cabin&#x000A;I am outside a portable cabin. A small window looks East.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
