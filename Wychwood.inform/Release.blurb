@@ -15,7 +15,7 @@ storyfile "C:\Users\thoma\Documents\Inform\Projects\Wychwood.inform\Build\output
 ifiction "C:\Users\thoma\Documents\Inform\Projects\Wychwood.inform\Metadata.iFiction" include
 cover "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Cover.jpg"
 picture 1 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Cover.jpg"
-picture 3 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Figures\title-splash.jpg" "A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood."
+picture 3 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Figures\title-splash.jpg" "A low-resolution black-and-white 1-bit image from the original game. An open concrete and wrought-iron gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood."
 
 ! Placeholder variables
 
@@ -28,9 +28,28 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
-status instruction ||&nbsp;<a href="source:story.ni#line4"><img border=0 src=inform:/doc_images/Reveal.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "Wychwood.gblorb.js"
+template path "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Templates"
+template path "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Templates"
+template path "C:\Users\thoma\Documents\Inform\Templates"
+template path "C:\Program Files\Inform\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "C:\Users\thoma\Documents\Inform\Projects\Wychwood.inform\Build\output.ulx" to "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Release\interpreter\Wychwood.gblorb.js"
+
+! Website instructions
+
+template path "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Templates"
+template path "C:\Users\thoma\Documents\Inform\Projects\Wychwood.materials\Templates"
+template path "C:\Users\thoma\Documents\Inform\Templates"
+template path "C:\Program Files\Inform\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line6"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc409.html><img border=0 src=inform:/doc_images/help.png></a>||

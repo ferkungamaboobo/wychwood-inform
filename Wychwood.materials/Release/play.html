@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geoffrey Hans Larsen - Wychwood — Play</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <meta name="author" content="Geoffrey Hans Larsen">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="interpreter/glkote.css" type="text/css">
+<link rel="stylesheet" href="interpreter/dialog.css" type="text/css">
+<script src="interpreter/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="interpreter/glkote.min.js" type="text/javascript"></script>
+<script src="interpreter/quixe.min.js" type="text/javascript"></script>
+
+<script src="interpreter/resourcemap.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+game_options = {
+image_info_map: 'StaticImageInfo',  //image data is here, not in blorb
+use_query_story: false,
+log_execution_time: true,
+set_page_title: false,
+inspacing: 0,     // gap between windows
+outspacing: 0     // gap between windows and edge of gameport
+};
+</script>
+
+<script src="interpreter/Wychwood.gblorb.js" type="text/javascript"></script>
+  
+ </head>
+<body class="play">
+	<div class="container">
+		<div class="sidebar">
+			<img src="Small Cover.jpg" alt="A low-resolution black-and-white 1-bit image from the original game. An open concrete and wrought-iron gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood." width="506" height="506">
+			<h1>Wychwood</h1>
+			<p>Originally created for the BBC Micro by Geoff Larsen in 1985 using the Quill.</p>
+			<p>Recreated by ferkung in 2022 using Inform 7.</p>
+			<p>Visit the game's <a href="../">home page</a>.</p>
+			<p>Need a hint? Get a <a href="https://solutionarchive.com/file/id%2C999/">walkthrough</a> from the Classic Adventures Solution Archive.</p>
+			<p>Online distribution made possible by: <a href="http://eblong.com/zarf/glulx/quixe/">Quixe for Inform 7 (v. 2.2.1)</a></p>
+		</div>
+		
+		<div id="gameport">
+		<div id="windowport">
+		<noscript><hr>
+		<p>You'll need to turn on Javascript in your web browser to play this game.</p>
+		<hr></noscript>
+		</div>
+		<div id="loadingpane">
+		<img src="interpreter/waiting.gif" alt="LOADING"><br>
+		<em>&nbsp;&nbsp;&nbsp;Loading...</em>
+		</div>
+		<div id="errorpane" style="display:none;"><div id="errorcontent">...</div></div>
+		</div>
+	
+	</div>
+</body>
+</html>
+

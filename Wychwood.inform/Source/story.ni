@@ -1,10 +1,12 @@
 "Wychwood" by Geoffrey Hans Larsen
 
+Release along with an interpreter.
+
 Include Basic Screen Effects by Emily Short.
-Release along with cover art ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
+Release along with cover art ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and wrought-iron gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
 The story headline is "Translated from Version E4 to Inform 7 by ferkung[line break]Originally".
 
-Figure of Splash Screen is the file "title-splash.jpg" ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and metal gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
+Figure of Splash Screen is the file "title-splash.jpg" ("A low-resolution black-and-white 1-bit image from the original game. An open concrete and wrought-iron gate leads to a lifted slab in front of a gothic mansion. Above it all is the title in a bat shape, reading Wychwood.").
 
 Volume 1 - Verbs
 
