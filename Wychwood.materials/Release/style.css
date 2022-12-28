@@ -102,6 +102,9 @@ body{
 .id .ferkung a:hover, .id .ferkung a:focus {
 	text-decoration:underline;
 }
+.game, .description {
+	overflow:hidden;
+}
 .game img {
 	float:left;
 	clear:left;
@@ -130,6 +133,18 @@ body{
 .game a.cta:hover, .game a.cta:focus {
 	border:.125rem double #003B48;
 	text-decoration:underline;
+}
+.description {
+	max-width: 36rem;
+	margin: 8rem auto 4rem;
+}
+
+.description h2, .description h3 {
+    margin: 1em 0;
+}
+
+.description h2:first-child {
+    margin-top: 0;
 }
 /* 
 Paragraph features defined here apply without distinction to blurb and
