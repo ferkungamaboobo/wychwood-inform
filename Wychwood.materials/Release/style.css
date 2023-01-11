@@ -586,7 +586,11 @@ Styles for play.html
     margin-left: .5rem;
     line-height: 1;
 }
-
+iframe {
+    max-width:100%;
+    aspect-ratio:576 / 324;
+    height:fit-content;
+}
 /*
 Styles for mobile browsers: change to a one-column layout.
 */
