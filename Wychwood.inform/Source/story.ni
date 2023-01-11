@@ -132,7 +132,7 @@ This car was easy enough to nick, huh? Don't care much for the colour but that i
 
 Can't be much further now. ";
 	pause the game;
-	say "Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of the morning.
+	say "Ah, there's the turning for Wychwood. I'll park the car here. The road is quite off the beaten track and anyway nobody should be snooping around at this time of morning.
 
 Not even seven yet. Right, here goes...";
 	now the time of day is 6:57 am;
